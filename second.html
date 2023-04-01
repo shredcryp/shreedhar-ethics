@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #000;
+            color: white;
+        }
+
+        .wholepage {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: black;
+            cursor: url(paperplane.png), auto;
+        }
+
+        @keyframes typing {
+
+            40%,
+            60% {
+                left: calc(100% + 30px);
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+
+        .leftlogo {
+            color: white;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .leftlogo h5 {
+            font-weight: normal;
+        }
+
+        .leftlogo img {
+            width: 150px;
+            height: 150px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rightoptions h4 {
+            width: 300px;
+            color: white;
+            margin: 0;
+            padding-right: 40px;
+            color: #2c87f0;
+        }
+
+        .rightoptions a {
+            text-decoration: none;
+        }
+
+        .rightoptions {
+            display: flex;
+
+        }
+
+        .imgname h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            background: url(back.png);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-position: 0 0;
+            animation: back 20s linear infinite;
+        }
+
+        @keyframes back {
+            100% {
+                background-position: 2000px 0;
+            }
+        }
+
+        .imgname {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .imgname img {
+            width: 30%;
+            height: 30%;
+            border-radius: 20px;
+            margin-left: 80px;
+        }
+
+        .imgname h3 {
+            color: white;
+        }
+
+        .threevids {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+        }
+    </style>
+    <div class="wholepage">
+        <nav>
+            <div class="leftlogo">
+                <a href="index.html"><img src="logo.png" alt="logo"></a>
+            </div>
+            <div class="rightoptions">
+                <a href="first.html">
+                    <h4>Example of values and ethics</h4>
+                </a>
+                <a href="second.html">
+                    <h4>Values and Ethics Resources</h4>
+                </a>
+            </div>
+        </nav>
+        <hr>
+        <div class="threevids">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BAswj8evFZk?start=342" frameborder="0"
+                allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_8juebyo_Z4" frameborder="0"
+                allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3rQi2uNqwxk" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
